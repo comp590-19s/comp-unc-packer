@@ -42,6 +42,7 @@ rustup component add rustfmt
 sudo apt-get install --no-install-recommends \
     pandoc \
     texlive-latex-base \
+    texlive-fonts-recommended \
     lmodern \
     -y
 
