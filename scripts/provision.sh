@@ -18,7 +18,7 @@ sudo apt-get install --no-install-recommends \
     vim \
     -y
 
-# Install Dev Tools
+# Install Dev Tools & Utilities
 sudo apt-get install --no-install-recommends \
     git \
     gdb \
@@ -30,6 +30,11 @@ sudo apt-get install --no-install-recommends \
     build-essential \
     python3-dev \
     graphviz \
+    zip \
+    htop \
+    linux-tools-common \
+    linux-tools-4.15.0-29-generic \
+    linux-tools-generic \
     -y
 
 # Install Rust
@@ -42,18 +47,20 @@ rustup component add rustfmt
 sudo apt-get install --no-install-recommends \
     pandoc \
     texlive-latex-base \
+    texlive-latex-recommended \
     texlive-fonts-recommended \
     lmodern \
     -y
 
-# Setup bash profile
-cp /vagrant/templates/.bash_profile ~/.bash_profile
+# Hide the login motd
 touch ~/.hushlogin
 
 # Install vim and YouCompleteMe rust semantic autocompletion
 mkdir -p ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-cp /vagrant/templates/.vimrc ~/.vimrc
 vim -c 'PluginInstall' -c 'qa!'
 cd ~/.vim/bundle/YouCompleteMe/
 python3 install.py --clang-completer --rust-completer
+
+# Ensure everything in /home/vagrant is owned by vagrant
+sudo chown -R vagrant:vagrant /home/vagrant
