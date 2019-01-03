@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 config.vm.define "comp590" do |box|
 
-    box.vm.box = "file://comp590-ubuntu-18-04-x64-virtualbox.box"
+    box.vm.box = "file://unccomp-ubuntu-18-04-x64-virtualbox.box"
     box.vm.network :private_network, ip: "192.168.56.3"
     box.vm.hostname = "bionic"
     box.ssh.insert_key = false

@@ -43,6 +43,18 @@ PATH=$PATH:~/.cargo/bin
 rustup component add rust-src
 rustup component add rustfmt
 
+# Install other noteworthy languages
+sudo apt-get install \
+    mit-scheme \
+    ruby \
+    nodejs \
+    npm \
+    php \
+    clang \
+    -y
+
+sudo npm install -g typescript ts-node
+
 # Install Pandoc and Tex
 sudo apt-get install --no-install-recommends \
     pandoc \

@@ -1,15 +1,16 @@
-export TERM=xterm-256color
-export PATH=$PATH:~/.cargo/bin
-export PATH=$PATH:./target/debug
-export PS1="\$ "
+export TERM=xterm-256color # ensure maximal beauty
+export PATH=$PATH:./target/debug # makes it easy to run rust bins by name
+export PS1="\$ " # simplify the prompt
 
 echo ""
 echo ""
-echo "    ███████╗ █████╗  ██████╗ "
-echo "    ██╔════╝██╔══██╗██╔═████╗"
-echo "    ███████╗╚██████║██║██╔██║"
-echo "    ╚════██║ ╚═══██║████╔╝██║"
-echo "    ███████║ █████╔╝╚██████╔╝"
-echo "    ╚══════╝ ╚════╝  ╚═════╝ "
+echo ""    
+echo "    ██╗   ██╗███╗   ██╗ ██████╗     ██████╗███████╗"
+echo "    ██║   ██║████╗  ██║██╔════╝    ██╔════╝██╔════╝"
+echo "    ██║   ██║██╔██╗ ██║██║         ██║     ███████╗"
+echo "    ██║   ██║██║╚██╗██║██║         ██║     ╚════██║"
+echo "    ╚██████╔╝██║ ╚████║╚██████╗    ╚██████╗███████║"
+echo "     ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝     ╚═════╝╚══════╝"
+echo ""   
 echo ""
 echo ""
