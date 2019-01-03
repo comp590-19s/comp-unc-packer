@@ -14,7 +14,7 @@ Beyond the base ubuntu install, the following customizations are added:
   - Limelight status bar
   - gruvbox theme
   - gitgutter for git information 
-  - NERDTree with <C-o> used for toggling sidebar
+  - NERDTree with Control+o used for toggling sidebar
 - latex (texlive), pandoc
 - graphviz
 
